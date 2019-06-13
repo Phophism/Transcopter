@@ -1,6 +1,6 @@
 ﻿namespace Transcopter
 {
-    partial class UC_home
+    partial class UC_send_pre
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,24 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Home_lable = new System.Windows.Forms.Label();
+            this.Send_label = new System.Windows.Forms.Label();
+            this.Send_btn_next = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Home_lable
+            // Send_label
             // 
-            this.Home_lable.AutoSize = true;
-            this.Home_lable.Location = new System.Drawing.Point(343, 228);
-            this.Home_lable.Name = "Home_lable";
-            this.Home_lable.Size = new System.Drawing.Size(62, 13);
-            this.Home_lable.TabIndex = 0;
-            this.Home_lable.Text = "Home page";
+            this.Send_label.AutoSize = true;
+            this.Send_label.Location = new System.Drawing.Point(351, 196);
+            this.Send_label.Name = "Send_label";
+            this.Send_label.Size = new System.Drawing.Size(51, 13);
+            this.Send_label.TabIndex = 0;
+            this.Send_label.Text = "Pre Send";
             // 
-            // UC_home
+            // Send_btn_next
+            // 
+            this.Send_btn_next.Location = new System.Drawing.Point(354, 242);
+            this.Send_btn_next.Name = "Send_btn_next";
+            this.Send_btn_next.Size = new System.Drawing.Size(48, 26);
+            this.Send_btn_next.TabIndex = 1;
+            this.Send_btn_next.Text = "next";
+            this.Send_btn_next.UseVisualStyleBackColor = true;
+            // 
+            // UC_send_pre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Home_lable);
-            this.Name = "UC_home";
+            this.Controls.Add(this.Send_btn_next);
+            this.Controls.Add(this.Send_label);
+            this.Name = "UC_send_pre";
             this.Size = new System.Drawing.Size(770, 480);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -54,6 +65,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Home_lable;
+        private System.Windows.Forms.Label Send_label;
+        private System.Windows.Forms.Button Send_btn_next;
     }
 }
