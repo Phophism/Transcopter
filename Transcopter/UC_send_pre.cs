@@ -16,5 +16,17 @@ namespace Transcopter
         {
             InitializeComponent();
         }
+
+        private void Send_btn_next_Click(object sender, EventArgs e)
+        {
+            if (!Form1.Instance.UC_container_panel.Controls.ContainsKey("UC_send_Progress"))
+            {
+                UC_send_Progress uc_send_progress = new UC_send_Progress();
+                uc_send_progress.Dock = DockStyle.Fill;
+                Form1.Instance.UC_container_panel.Controls.Add(uc_send_progress);
+            }
+            Form1.Instance.UC_container_panel.Controls["UC_send_Progress"].BringToFront();
+            Form1.Instance.Back_btn.Visible = true ;
+        }
     }
 }

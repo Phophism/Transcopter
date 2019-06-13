@@ -49,6 +49,7 @@
             this.Send_btn_next.TabIndex = 1;
             this.Send_btn_next.Text = "next";
             this.Send_btn_next.UseVisualStyleBackColor = true;
+            this.Send_btn_next.Click += new System.EventHandler(this.Send_btn_next_Click);
             // 
             // UC_send_pre
             // 

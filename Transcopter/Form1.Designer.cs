@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.Panel_left = new System.Windows.Forms.Panel();
-            this.Panel_top = new System.Windows.Forms.Panel();
-            this.UC_container = new System.Windows.Forms.Panel();
-            this.Logo = new System.Windows.Forms.PictureBox();
-            this.Btn_home = new System.Windows.Forms.Button();
-            this.Btn_send = new System.Windows.Forms.Button();
             this.Btn_his = new System.Windows.Forms.Button();
-            this.Panel_back = new System.Windows.Forms.Panel();
+            this.Btn_send = new System.Windows.Forms.Button();
+            this.Btn_home = new System.Windows.Forms.Button();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.Panel_top = new System.Windows.Forms.Panel();
             this.Panel_windows = new System.Windows.Forms.Panel();
-            this.Btn_Back = new System.Windows.Forms.Button();
-            this.Btn_close = new System.Windows.Forms.Button();
             this.Btn_minimize = new System.Windows.Forms.Button();
+            this.Btn_close = new System.Windows.Forms.Button();
+            this.Panel_back = new System.Windows.Forms.Panel();
+            this.Btn_Back = new System.Windows.Forms.Button();
+            this.UC_container = new System.Windows.Forms.Panel();
             this.Panel_left.SuspendLayout();
-            this.Panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
-            this.Panel_back.SuspendLayout();
+            this.Panel_top.SuspendLayout();
             this.Panel_windows.SuspendLayout();
+            this.Panel_back.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_left
@@ -60,48 +60,19 @@
             this.Panel_left.Size = new System.Drawing.Size(130, 550);
             this.Panel_left.TabIndex = 0;
             // 
-            // Panel_top
+            // Btn_his
             // 
-            this.Panel_top.Controls.Add(this.Panel_windows);
-            this.Panel_top.Controls.Add(this.Panel_back);
-            this.Panel_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_top.Location = new System.Drawing.Point(130, 0);
-            this.Panel_top.Margin = new System.Windows.Forms.Padding(0);
-            this.Panel_top.Name = "Panel_top";
-            this.Panel_top.Size = new System.Drawing.Size(770, 70);
-            this.Panel_top.TabIndex = 1;
-            // 
-            // UC_container
-            // 
-            this.UC_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UC_container.Location = new System.Drawing.Point(130, 70);
-            this.UC_container.Margin = new System.Windows.Forms.Padding(0);
-            this.UC_container.Name = "UC_container";
-            this.UC_container.Size = new System.Drawing.Size(770, 480);
-            this.UC_container.TabIndex = 1;
-            // 
-            // Logo
-            // 
-            this.Logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo.Location = new System.Drawing.Point(0, 0);
-            this.Logo.Margin = new System.Windows.Forms.Padding(0);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(130, 70);
-            this.Logo.TabIndex = 0;
-            this.Logo.TabStop = false;
-            // 
-            // Btn_home
-            // 
-            this.Btn_home.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Btn_home.FlatAppearance.BorderSize = 0;
-            this.Btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_home.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_home.Location = new System.Drawing.Point(0, 70);
-            this.Btn_home.Name = "Btn_home";
-            this.Btn_home.Size = new System.Drawing.Size(130, 90);
-            this.Btn_home.TabIndex = 1;
-            this.Btn_home.Text = "button1";
-            this.Btn_home.UseVisualStyleBackColor = true;
+            this.Btn_his.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn_his.FlatAppearance.BorderSize = 0;
+            this.Btn_his.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_his.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_his.Location = new System.Drawing.Point(0, 250);
+            this.Btn_his.Name = "Btn_his";
+            this.Btn_his.Size = new System.Drawing.Size(130, 90);
+            this.Btn_his.TabIndex = 3;
+            this.Btn_his.Text = "button3";
+            this.Btn_his.UseVisualStyleBackColor = true;
+            this.Btn_his.Click += new System.EventHandler(this.Btn_his_Click);
             // 
             // Btn_send
             // 
@@ -115,28 +86,42 @@
             this.Btn_send.TabIndex = 2;
             this.Btn_send.Text = "button2";
             this.Btn_send.UseVisualStyleBackColor = true;
+            this.Btn_send.Click += new System.EventHandler(this.Btn_send_Click);
             // 
-            // Btn_his
+            // Btn_home
             // 
-            this.Btn_his.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Btn_his.FlatAppearance.BorderSize = 0;
-            this.Btn_his.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_his.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_his.Location = new System.Drawing.Point(0, 250);
-            this.Btn_his.Name = "Btn_his";
-            this.Btn_his.Size = new System.Drawing.Size(130, 90);
-            this.Btn_his.TabIndex = 3;
-            this.Btn_his.Text = "button3";
-            this.Btn_his.UseVisualStyleBackColor = true;
+            this.Btn_home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn_home.FlatAppearance.BorderSize = 0;
+            this.Btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_home.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_home.Location = new System.Drawing.Point(0, 70);
+            this.Btn_home.Name = "Btn_home";
+            this.Btn_home.Size = new System.Drawing.Size(130, 90);
+            this.Btn_home.TabIndex = 1;
+            this.Btn_home.Text = "button1";
+            this.Btn_home.UseVisualStyleBackColor = true;
+            this.Btn_home.Click += new System.EventHandler(this.Btn_home_Click);
             // 
-            // Panel_back
+            // Logo
             // 
-            this.Panel_back.Controls.Add(this.Btn_Back);
-            this.Panel_back.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Panel_back.Location = new System.Drawing.Point(0, 0);
-            this.Panel_back.Name = "Panel_back";
-            this.Panel_back.Size = new System.Drawing.Size(80, 70);
-            this.Panel_back.TabIndex = 0;
+            this.Logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo.Location = new System.Drawing.Point(0, 0);
+            this.Logo.Margin = new System.Windows.Forms.Padding(0);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(130, 70);
+            this.Logo.TabIndex = 0;
+            this.Logo.TabStop = false;
+            // 
+            // Panel_top
+            // 
+            this.Panel_top.Controls.Add(this.Panel_windows);
+            this.Panel_top.Controls.Add(this.Panel_back);
+            this.Panel_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel_top.Location = new System.Drawing.Point(130, 0);
+            this.Panel_top.Margin = new System.Windows.Forms.Padding(0);
+            this.Panel_top.Name = "Panel_top";
+            this.Panel_top.Size = new System.Drawing.Size(770, 70);
+            this.Panel_top.TabIndex = 1;
             // 
             // Panel_windows
             // 
@@ -147,30 +132,6 @@
             this.Panel_windows.Name = "Panel_windows";
             this.Panel_windows.Size = new System.Drawing.Size(140, 70);
             this.Panel_windows.TabIndex = 1;
-            // 
-            // Btn_Back
-            // 
-            this.Btn_Back.FlatAppearance.BorderSize = 0;
-            this.Btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Back.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Back.Location = new System.Drawing.Point(20, 14);
-            this.Btn_Back.Name = "Btn_Back";
-            this.Btn_Back.Size = new System.Drawing.Size(40, 40);
-            this.Btn_Back.TabIndex = 4;
-            this.Btn_Back.Text = "button4";
-            this.Btn_Back.UseVisualStyleBackColor = true;
-            // 
-            // Btn_close
-            // 
-            this.Btn_close.FlatAppearance.BorderSize = 0;
-            this.Btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_close.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_close.Location = new System.Drawing.Point(73, 14);
-            this.Btn_close.Name = "Btn_close";
-            this.Btn_close.Size = new System.Drawing.Size(40, 40);
-            this.Btn_close.TabIndex = 5;
-            this.Btn_close.Text = "button5";
-            this.Btn_close.UseVisualStyleBackColor = true;
             // 
             // Btn_minimize
             // 
@@ -184,6 +145,49 @@
             this.Btn_minimize.Text = "button6";
             this.Btn_minimize.UseVisualStyleBackColor = true;
             // 
+            // Btn_close
+            // 
+            this.Btn_close.FlatAppearance.BorderSize = 0;
+            this.Btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_close.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_close.Location = new System.Drawing.Point(73, 14);
+            this.Btn_close.Name = "Btn_close";
+            this.Btn_close.Size = new System.Drawing.Size(40, 40);
+            this.Btn_close.TabIndex = 5;
+            this.Btn_close.Text = "button5";
+            this.Btn_close.UseVisualStyleBackColor = true;
+            // 
+            // Panel_back
+            // 
+            this.Panel_back.Controls.Add(this.Btn_Back);
+            this.Panel_back.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Panel_back.Location = new System.Drawing.Point(0, 0);
+            this.Panel_back.Name = "Panel_back";
+            this.Panel_back.Size = new System.Drawing.Size(80, 70);
+            this.Panel_back.TabIndex = 0;
+            // 
+            // Btn_Back
+            // 
+            this.Btn_Back.FlatAppearance.BorderSize = 0;
+            this.Btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Back.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Back.Location = new System.Drawing.Point(20, 14);
+            this.Btn_Back.Name = "Btn_Back";
+            this.Btn_Back.Size = new System.Drawing.Size(40, 40);
+            this.Btn_Back.TabIndex = 4;
+            this.Btn_Back.Text = "button4";
+            this.Btn_Back.UseVisualStyleBackColor = true;
+            this.Btn_Back.Click += new System.EventHandler(this.Btn_Back_Click);
+            // 
+            // UC_container
+            // 
+            this.UC_container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UC_container.Location = new System.Drawing.Point(130, 70);
+            this.UC_container.Margin = new System.Windows.Forms.Padding(0);
+            this.UC_container.Name = "UC_container";
+            this.UC_container.Size = new System.Drawing.Size(770, 480);
+            this.UC_container.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,11 +199,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "  ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Panel_left.ResumeLayout(false);
-            this.Panel_top.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
-            this.Panel_back.ResumeLayout(false);
+            this.Panel_top.ResumeLayout(false);
             this.Panel_windows.ResumeLayout(false);
+            this.Panel_back.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
