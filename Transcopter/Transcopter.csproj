@@ -89,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UC_his.resx">
       <DependentUpon>UC_his.cs</DependentUpon>
@@ -114,6 +115,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camt_digital_4TL_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camt_digital_SZs_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drone_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drone2_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drone3_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history2_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_white_smaller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2_white_241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2_white_16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

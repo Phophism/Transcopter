@@ -93,5 +93,55 @@ namespace Transcopter
             UC_container_panel.Controls["UC_send_pre"].BringToFront();
             Btn_Back.Visible = false;
         }
+
+        private void Btn_minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Btn_close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+        private void Panel_top_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        int mouse_x = 0;
+        int mouse_y = 0;
+        int mouse_x_pos;
+        int mouse_y_pos;
+        bool mousedown;
+
+        private void Panel_top_MouseDown(object sender, MouseEventArgs e)
+        {
+            mousedown = true;
+/*            mouse_x_pos = MousePosition.X ;
+            mouse_y_pos = MousePosition.Y  ;*/
+        }
+
+        private void Panel_top_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(mousedown == true)
+            {
+                mouse_x = MousePosition.X - mouse_x_pos;
+                mouse_y = MousePosition.Y - 20 ;
+
+                this.SetDesktopLocation(mouse_x, mouse_y);
+            }
+        }
+
+        private void Panel_top_MouseUp(object sender, MouseEventArgs e)
+        {
+            mousedown = false;
+        }
+
+        private void Panel_left_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
