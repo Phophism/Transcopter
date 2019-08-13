@@ -103,6 +103,26 @@ namespace Transcopter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap camt_horizontal {
+            get {
+                object obj = ResourceManager.GetObject("camt_horizontal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delevery_64 {
+            get {
+                object obj = ResourceManager.GetObject("delevery 64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap drone {
             get {
                 object obj = ResourceManager.GetObject("drone", resourceCulture);

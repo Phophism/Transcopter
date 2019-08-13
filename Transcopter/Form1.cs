@@ -112,25 +112,25 @@ namespace Transcopter
 
         int mouse_x = 0;
         int mouse_y = 0;
-        int mouse_x_pos;
-        int mouse_y_pos;
+        int mouse_x_pos = 0;
+        int mouse_y_pos = 0;
         bool mousedown;
 
         private void Panel_top_MouseDown(object sender, MouseEventArgs e)
         {
             mousedown = true;
-/*            mouse_x_pos = MousePosition.X ;
-            mouse_y_pos = MousePosition.Y  ;*/
+            mouse_x_pos = e.X ;
+            mouse_y_pos = e.Y;
         }
 
         private void Panel_top_MouseMove(object sender, MouseEventArgs e)
         {
             if(mousedown == true)
             {
-                mouse_x = MousePosition.X - mouse_x_pos;
-                mouse_y = MousePosition.Y - 20 ;
+                mouse_x = MousePosition.X-130;
+                mouse_y = MousePosition.Y;
 
-                this.SetDesktopLocation(mouse_x, mouse_y);
+                this.SetDesktopLocation(mouse_x - mouse_x_pos , mouse_y - mouse_y_pos);
             }
         }
 

@@ -164,5 +164,11 @@
   <ItemGroup>
     <None Include="Resources\minimize2_white_16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camt_horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delevery 64.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
